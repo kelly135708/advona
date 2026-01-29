@@ -1,226 +1,46 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ADVONA.AI| Performance Marketing for Global Growth</title>
-  <style>
-    :root {
-      --bg: #05060a;
-      --card: #0e1020;
-      --primary: #6cf2c2;
-      --secondary: #6aa8ff;
-      --text: #e6e8f0;
-      --muted: #9aa0c3;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
-      background: radial-gradient(1200px 600px at 20% -10%, #11144a, transparent), var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    a { color: inherit; text-decoration: none; }
-    .container { max-width: 1200px; margin: auto; padding: 80px 24px; }
-    header {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 24px 32px; position: sticky; top: 0; background: rgba(5,6,10,.7); backdrop-filter: blur(10px);
-    }
-    .logo { font-size: 24px; font-weight: 800; letter-spacing: 1px; }
-    nav a { margin-left: 24px; font-size: 14px; color: var(--muted); }
-    nav a:hover { color: var(--text); }
-    .hero h1 {
-      font-size: 52px; line-height: 1.1; margin-bottom: 20px;
-      background: linear-gradient(90deg, var(--primary), var(--secondary));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    }
-    .hero p { max-width: 620px; color: var(--muted); font-size: 18px; }
-    .btn {
-      display: inline-block; margin-top: 32px; margin-right: 16px;
-      padding: 14px 28px; border-radius: 999px; font-weight: 600; font-size: 14px;
-      background: linear-gradient(90deg, var(--primary), var(--secondary)); color: #000;
-    }
-    .btn.secondary { background: transparent; color: var(--text); border: 1px solid #2a2d55; }
-    section h2 { font-size: 32px; margin-bottom: 40px; }
-    .grid { display: grid; gap: 24px; }
-    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-    .card {
-      background: linear-gradient(180deg, rgba(255,255,255,.05), transparent);
-      border: 1px solid #1d2145; border-radius: 20px; padding: 28px;
-    }
-    .card h3 { margin-bottom: 12px; font-size: 20px; }
-    .card p { color: var(--muted); font-size: 14px; }
-    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-    .lang { color: var(--secondary); font-size: 13px; letter-spacing: .5px; margin-bottom: 8px; }
-    footer { border-top: 1px solid #1d2145; padding: 40px 24px; text-align: center; color: var(--muted); }
-    @media (max-width: 900px) {
-      .hero h1 { font-size: 40px; }
-      .split { grid-template-columns: 1fr; }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="logo">ADVONA.AI</div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#careers">Careers</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
- .logo {
-  font-size: 26px;
-  font-weight: 900;
-  letter-spacing: 0.32em;
-  text-transform: uppercase;
-  background: linear-gradient(90deg, #7aa2ff, #9cf0ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ADVONA.AI | Performance Marketing for Global Growth</title>
+
+<style>
+:root {
+  --bg:#05060a;
+  --primary:#7aa2ff;
+  --secondary:#9cf0ff;
+  --text:#e6e8f0;
+  --muted:#9aa0c3;
+  --border:#1d2145;
 }
-  <main>
-    <!-- Hero -->
-    <section class="container hero">
-      <div class="lang">PERFORMANCE MARKETING · GLOBAL GROWTH</div>
-      <h1>用数据驱动增长<br/>为出海品牌创造结果</h1>
-      <p>
-        ADVONA 是一家专注效果投放的出海营销公司。我们帮助全球化品牌在复杂市场中，持续获得可规模化的增长。
-      </p>
-      <p style="margin-top:12px;">
-        ADVONA is a performance-driven marketing agency helping global brands scale through paid media, data, and experimentation.
-      </p>
-      <p style="margin-top:16px; color: var(--secondary); font-size:14px;">
-        We are hiring performance-driven builders.
-      </p>
-      <a class="btn" href="#contact">Start Growth</a>
-      <a class="btn secondary" href="#careers">Join ADVONA</a>
-    </section>
 
-    <!-- Metrics -->
-    <section class="container">
-      <div class="grid grid-3">
-        <div class="card">
-          <h3>Markets</h3>
-          <p>North America · Europe · SEA</p>
-        </div>
-        <div class="card">
-          <h3>Channels</h3>
-          <p>Meta · Google · TikTok · Programmatic</p>
-        </div>
-        <div class="card">
-          <h3>Focus Metrics</h3>
-          <p>ROAS · CAC · LTV · Scale</p>
-        </div>
-      </div>
-    </section>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;
+  background:radial-gradient(1000px 500px at 20% -10%,#11144a,transparent),var(--bg);
+  color:var(--text);
+  overflow-x:hidden;
+}
 
-    <!-- Services -->
-    <section id="services" class="container">
-      <h2>我们做什么 / What We Do</h2>
-      <div class="grid grid-3">
-        <div class="card">
-          <h3>效果广告投放</h3>
-          <p>Meta · Google · TikTok · Programmatic<br/>以 ROI 为核心的投放策略与执行</p>
-        </div>
-        <div class="card">
-          <h3>数据与优化</h3>
-          <p>归因分析、漏斗拆解、A/B 测试<br/>让每一分预算都更聪明</p>
-        </div>
-        <div class="card">
-          <h3>出海增长策略</h3>
-          <p>市场进入、素材本地化、规模化增长<br/>专注长期可复制的增长模型</p>
-        </div>
-      </div>
-    </section>
+/* ===== Header ===== */
+header{
+  position:fixed;
+  top:0;left:0;right:0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 32px;
+  background:rgba(5,6,10,.6);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+  z-index:10;
+}
 
-    <!-- About -->
-    <section id="about" class="container split">
-      <div>
-        <h2>关于 ADVONA</h2>
-        <p class="lang">ABOUT US</p>
-        <p>
-          我们来自广告、数据、技术背景，相信营销的本质是可验证的增长，而不是感觉。
-        </p>
-        <p style="margin-top:12px; color: var(--muted);">
-          We believe great marketing is measurable, scalable, and built on continuous experimentation.
-        </p>
-      </div>
-      <div class="card">
-        <h3>我们关注的不是曝光</h3>
-        <p>
-          而是转化、留存、LTV，以及长期价值。
-        </p>
-      </div>
-    </section>
-
-    <!-- Careers -->
-    <section id="careers" class="container">
-      <div class="card" style="margin-bottom:60px;">
-        <h3>我们的价值观 / Our Values</h3>
-        <p style="margin-top:12px;">Think in ROI · Build for Scale · Learn Faster Than the Market</p>
-        <p style="margin-top:8px; color: var(--muted);">
-          我们相信长期主义、清晰判断，以及用数据赢得增长。
-        </p>
-      </div>
-      <h2>加入我们 / Careers</h2>
-      <p class="lang">WHY ADVONA</p>
-      <div class="grid grid-3">
-        <div class="card">
-          <h3>真实增长负责制</h3>
-          <p>你负责的不是“执行”，而是结果。每一个项目都和真实业务指标绑定。</p>
-        </div>
-        <div class="card">
-          <h3>数据 & Ownership</h3>
-          <p>从投放到复盘，全链路数据透明。我们鼓励判断、试错和长期 ownership。</p>
-        </div>
-        <div class="card">
-          <h3>全球视角</h3>
-          <p>直接参与出海市场与国际客户，理解不同文化和用户增长逻辑。</p>
-        </div>
-      </div>
-
-      <div style="margin-top:60px;">
-        <p class="lang">OPEN ROLES</p>
-        <div class="grid grid-3">
-          <div class="card">
-            <h3>Paid Media Specialist</h3>
-            <p>Meta / Google / TikTok · 数据驱动 · 持续优化</p>
-          </div>
-          <div class="card">
-            <h3>Creative Strategist</h3>
-            <p>素材结构 · 用户洞察 · 跨文化创意</p>
-          </div>
-          <div class="card">
-            <h3>Growth Analyst</h3>
-            <p>归因分析 · 实验设计 · 增长模型</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="container">
-      <div class="card" style="margin-bottom:40px;">
-        <h3>Join ADVONA</h3>
-        <p>
-          Send your CV, portfolio, or LinkedIn to<br/>
-          <strong>talent@advona.ai</strong>
-        </p>
-      </div>
-      <h2>联系合作 / Contact</h2>
-      <p class="lang">WORK WITH ADVONA</p>
-      <p>
-        Brand / Client: business@advona.com<br/>
-        Career: talent@advona.ai
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <div style="margin-bottom:16px; font-weight:600;">
-      Performance Marketing for Scalable Global Growth
-    </div>
-    <p>© 2026 ADVONA · Performance Marketing for Global Growth</p>
-  </footer>
-</body>
-</html>
+.logo{
+  font-size:26px;
+  font-weight:900;
+  letter-spacing:.32em;
+  text-transform:uppercase;
+  background:linear-gradient(90deg,var(--primary),var(--secondary),var(--primary));
+  background-size:200% 200%;
